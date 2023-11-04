@@ -25,15 +25,17 @@ namespace Events
 
         private IEnumerator ScheduleEvent(Event eventDef)
         {
-            float idleTime = 
-            yield return new WaitForSeconds(eventDef.recurringTime);
+            float idleTime = eventDef.RecurringTime.min;
+            yield return new WaitForSeconds(idleTime);
             ProcessEvent();
         }
 
+        /*
         private float GetRandomizedTime((float min, float max) )
         {
-
+                return 0.0f;
         }
+        */
 
         private void ProcessEvent()
         {
