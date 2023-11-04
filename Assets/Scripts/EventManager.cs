@@ -19,8 +19,10 @@ namespace Events
 
         private IEnumerator ScheduleEvent(Event eventDef)
         {
-            float randomizedIdleTime = GetRandomizedTime(eventDef.RecurringTime);
+            float randomizedIdleTime = GetRandomizedTime(eventDef.timeTillSpawn);
             yield return new WaitForSeconds(randomizedIdleTime);
+
+
             ProcessEvent(eventDef);
         }
         

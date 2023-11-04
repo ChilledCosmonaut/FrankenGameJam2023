@@ -1,15 +1,38 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerState : MonoBehaviour
 {
-    public int money;
-    public int maxMoney;
+    [SerializeField]
+    private int money = 0;
+    public UnityAction<int> OnMoneyChange;
+    public int ChangeMoney
+    {
+        set { 
+            money += value;
+            OnMoneyChange(money);
+        }
+    }
 
-    public int reputation;
-    public int maxReputation;
+    [SerializeField]
+    private int reputation = 0;
+    public UnityAction<int> OnReputationChange;
+    public int ChangeReputation
+    {
+        set { 
+            reputation += value;
+            OnReputationChange(reputation);
+        }
+    }
 
-    public int speed;
+    [SerializeField]
+    private float speed;
+    public UnityAction<int> OnSpeedChange;
+    public float ModifySpeed
+    {
+        set { 
+            speed *= value;
+            OnSpeedChange(reputation);
+        }
+    }
 }
