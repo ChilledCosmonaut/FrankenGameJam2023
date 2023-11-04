@@ -6,6 +6,9 @@ public class PointerSelect : MonoBehaviour
 {
     public float raycastDistance = 10f;
 
+    public int player = 1;
+
+    GameObject gameObjectHit;
     private void Update()
     {
         // Create a raycast from the current position, straight down
@@ -22,10 +25,12 @@ public class PointerSelect : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.LeftShift))
             {
                 // Check if the hit object has a tag
-                if (hit.collider.CompareTag("Interactable")) // Replace "YourTag" with the tag you want to look for
+                if (hit.collider.TryGetComponent(out Interactable Inter)) // Replace "YourTag" with the tag you want to look for
                 {
                     // The hit object has the desired tag
-                    Debug.Log("Hit object with the tag 'YourTag'.");
+                    Inter.IneractionStart(player);
+
+                    print("kek");
                 }
 
                 Debug.Log(hit.point);
