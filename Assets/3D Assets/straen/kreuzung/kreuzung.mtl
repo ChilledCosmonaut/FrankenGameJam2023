@@ -1,0 +1,8 @@
+# Made in Blockbench 4.8.3
+newmtl m_b2e1ca69-7bb2-4103-7894-533e567e8b4c
+map_Kd street.png 
+newmtl m_05b768eb-7068-bd4c-52b2-0ddc5a566c7f
+map_Kd street_crossing.png 
+newmtl m_168ac72a-67e2-f59d-02ef-7646b100b98e
+map_Kd pavement.png 
+newmtl none
