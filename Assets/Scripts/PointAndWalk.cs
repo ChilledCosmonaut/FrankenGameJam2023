@@ -7,7 +7,14 @@ public class PointAndWalk : MonoBehaviour
 {
 
     public GameObject cursor;
+    public GameObject wayPoint;
     public float speed = 5f;
+
+    private bool isMoving;
+    private Vector3 orgiPos, targetPos;
+    private float timeToMove = 0.2f;
+
+    public float distance;
 
     NavMeshAgent _navAgent;
     void Awake()
@@ -18,28 +25,39 @@ public class PointAndWalk : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _navAgent.SetDestination(cursor.transform.position);
+       
 
-        if(Input.GetKey(KeyCode.W))
+        if(Input.GetKey(KeyCode.W) && !isMoving)
         {
-            MovePlayer(Vector3.up);
+            StartCoroutine(MovePlayer(Vector3.forward));
         }
         
-        if(Input.GetKey(KeyCode.A))
+        if(Input.GetKey(KeyCode.A)&& !isMoving)
         {
-            MovePlayer(Vector3.left);
+            StartCoroutine(MovePlayer(Vector3.left));
         }
 
-        if(Input.GetKey(KeyCode.S))
+        if(Input.GetKey(KeyCode.S)&& !isMoving)
         {
-            MovePlayer(Vector3.down);
+            StartCoroutine(MovePlayer(-Vector3.forward));
         }
 
-        if(Input.GetKey(KeyCode.D))
+        if(Input.GetKey(KeyCode.D)&& !isMoving)
         {
-            MovePlayer(Vector3.right);
+            StartCoroutine(MovePlayer(Vector3.right));
         }
 
+        distance = Vector3.Distance(transform.position, cursor.transform.position);
+
+        if(Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            wayPoint.transform.position = cursor.transform.position;
+            StartCoroutine(GoTo());
+        }
+
+        /////////////////////////////////////////////////////////////////////////
+        //Falls es mit den zwei Mäusen funktioniert hier drunter ist der originale movement Code, 
+        //einfach in ein neues Script kopieren und auf den spieler ziehen
         /*
         if(Input.GetMouseButtonDown(0))
         {
@@ -53,8 +71,33 @@ public class PointAndWalk : MonoBehaviour
         */
     }
 
-    private void MovePlayer(Vector3 direction)
+    private IEnumerator MovePlayer(Vector3 direction)
     {
-        cursor.transform.Translate(direction * speed * Time.deltaTime);
+        isMoving = true;
+
+        float elapsedTime = 0;
+
+        orgiPos = cursor.transform.position;
+        targetPos = orgiPos + direction;
+
+        while(elapsedTime < timeToMove)
+        {
+            cursor.transform.position = Vector3.Lerp(orgiPos, targetPos, (elapsedTime/timeToMove));
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        cursor.transform.position = targetPos;
+
+        isMoving = false;
+    }
+
+    private IEnumerator GoTo()
+    {
+        while(distance > 0.6)
+        {
+             _navAgent.SetDestination(wayPoint.transform.position);
+             yield return null;
+        }
     }
 }
