@@ -20,10 +20,12 @@ namespace Events
     [CreateAssetMenu(fileName = "Event", menuName = "ScriptableObjects/Event", order = 1)]
     public class Event : ScriptableObject
     {
-        public Range<float> RecurringTime = new Range<float>{ min = 0.5f , max = 1.0f };
+        public Range<float> timeTillSpawn = new Range<float>{ min = 0.5f , max = 1.0f };
+        public Vector3 location;
         public string header;
         [TextArea]
         public string body;
         public Effect effect;
+        public GameObject eventMarker;
     }
 }
