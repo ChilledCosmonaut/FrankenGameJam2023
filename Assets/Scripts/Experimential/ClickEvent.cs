@@ -12,10 +12,15 @@ public class ClickEvent : MonoBehaviour
     public bool isActive = false;
 
     public GameObject player;
+
+   Camera m_MainCamera;
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindWithTag("Player");
+        m_MainCamera = Camera.main;
+
+        transform.LookAt(m_MainCamera.transform);
     }
 
     void OnMouseDown()
