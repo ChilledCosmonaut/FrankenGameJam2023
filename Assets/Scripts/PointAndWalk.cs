@@ -55,6 +55,9 @@ public class PointAndWalk : MonoBehaviour
             StartCoroutine(GoTo());
         }
 
+        /////////////////////////////////////////////////////////////////////////
+        //Falls es mit den zwei Mäusen funktioniert hier drunter ist der originale movement Code, 
+        //einfach in ein neues Script kopieren und auf den spieler ziehen
         /*
         if(Input.GetMouseButtonDown(0))
         {
