@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class PointAndWalk : MonoBehaviour
+public class Player2 : MonoBehaviour
 {
 
     public GameObject cursor;
@@ -27,29 +27,29 @@ public class PointAndWalk : MonoBehaviour
     {
        
 
-        if(Input.GetKey(KeyCode.W) && !isMoving)
+        if(Input.GetKey(KeyCode.UpArrow) && !isMoving)
         {
             StartCoroutine(MovePlayer(Vector3.forward));
         }
         
-        if(Input.GetKey(KeyCode.A)&& !isMoving)
+        if(Input.GetKey(KeyCode.LeftArrow)&& !isMoving)
         {
             StartCoroutine(MovePlayer(Vector3.left));
         }
 
-        if(Input.GetKey(KeyCode.S)&& !isMoving)
+        if(Input.GetKey(KeyCode.DownArrow)&& !isMoving)
         {
             StartCoroutine(MovePlayer(-Vector3.forward));
         }
 
-        if(Input.GetKey(KeyCode.D)&& !isMoving)
+        if(Input.GetKey(KeyCode.RightArrow)&& !isMoving)
         {
             StartCoroutine(MovePlayer(Vector3.right));
         }
 
         distance = Vector3.Distance(transform.position, cursor.transform.position);
 
-        if(Input.GetKeyDown(KeyCode.LeftShift))
+        if(Input.GetKeyDown(KeyCode.Space))
         {
             wayPoint.transform.position = cursor.transform.position;
             StartCoroutine(GoTo());
