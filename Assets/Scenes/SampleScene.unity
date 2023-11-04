@@ -822,6 +822,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prob: {fileID: 3245468093372178014, guid: c466ebd510b75324f9af2a0e4bd16163, type: 3}
+  spot: {fileID: 450786311}
 --- !u!1 &263688371
 GameObject:
   m_ObjectHideFlags: 0

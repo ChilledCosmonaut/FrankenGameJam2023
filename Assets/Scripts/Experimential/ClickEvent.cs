@@ -35,6 +35,7 @@ public class ClickEvent : MonoBehaviour
         distance = Vector3.Distance(transform.position, player.transform.position);
         if(isActive && distance < eventTriggerR)
         {
+            print("event start");
             Destroy(gameObject);
         }
     }
