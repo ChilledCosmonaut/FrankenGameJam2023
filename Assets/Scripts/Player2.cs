@@ -78,7 +78,7 @@ public class Player2 : MonoBehaviour
         float elapsedTime = 0;
 
         orgiPos = cursor.transform.position;
-        targetPos = orgiPos + direction;
+        targetPos = orgiPos + direction*7;
 
         while(elapsedTime < timeToMove)
         {
