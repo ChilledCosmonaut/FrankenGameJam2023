@@ -747,9 +747,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4dc36b1eb84a422b8d8f3f524ee9daf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Play: {fileID: 0}
-  Quit: {fileID: 0}
-  Credit: {fileID: 0}
+  Play: {fileID: 1882733146}
+  Quit: {fileID: 113625530}
+  Credit: {fileID: 1753283167}
 --- !u!1 &520452599
 GameObject:
   m_ObjectHideFlags: 0
@@ -763,6 +763,7 @@ GameObject:
   - component: {fileID: 520452602}
   - component: {fileID: 520452601}
   - component: {fileID: 520452604}
+  - component: {fileID: 520452605}
   m_Layer: 5
   m_Name: Quit
   m_TagString: Untagged
@@ -835,7 +836,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 484386073}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: OnQuit
         m_Mode: 1
@@ -847,7 +848,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1971496482}
         m_TargetAssemblyTypeName: MenuSound, Assembly-CSharp
         m_MethodName: ClickSound
         m_Mode: 1
@@ -909,6 +910,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a368cf4abcec21448d61270c26ab5b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &520452605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520452599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9ca4cc6f165149e1bbead5c4078d53b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 113625530}
 --- !u!1 &942503272
 GameObject:
   m_ObjectHideFlags: 0
@@ -1049,8 +1063,8 @@ GameObject:
   - component: {fileID: 960678702}
   - component: {fileID: 960678701}
   - component: {fileID: 960678700}
-  - component: {fileID: 960678703}
   - component: {fileID: 960678704}
+  - component: {fileID: 960678703}
   m_Layer: 5
   m_Name: Credits
   m_TagString: Untagged
@@ -1123,7 +1137,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 484386073}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: OnCredit
         m_Mode: 1
@@ -1135,7 +1149,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1971496482}
         m_TargetAssemblyTypeName: MenuSound, Assembly-CSharp
         m_MethodName: ClickSound
         m_Mode: 1
@@ -1194,9 +1208,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 960678698}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a368cf4abcec21448d61270c26ab5b7, type: 3}
+  m_Script: {fileID: 11500000, guid: eb6c5fef6db5d4385b0014f511ff3156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WIP_TycoonMenu: {fileID: 0}
+  Click: {fileID: 973868283}
 --- !u!114 &960678704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1206,9 +1222,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 960678698}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f625b2efcc394c49a1044fc0b964068, type: 3}
+  m_Script: {fileID: 11500000, guid: b9ca4cc6f165149e1bbead5c4078d53b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text: {fileID: 1753283167}
 --- !u!1 &973868282
 GameObject:
   m_ObjectHideFlags: 0
@@ -1423,8 +1440,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1012524802}
   - component: {fileID: 1012524803}
-  - component: {fileID: 1012524804}
   - component: {fileID: 1012524805}
+  - component: {fileID: 1012524804}
   m_Layer: 5
   m_Name: Volume
   m_TagString: Untagged
@@ -1506,7 +1523,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1012524804}
+      - m_Target: {fileID: 1012524805}
         m_TargetAssemblyTypeName: Soundslider, Assembly-CSharp
         m_MethodName: ChangeVolume
         m_Mode: 1
@@ -1527,9 +1544,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1012524801}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04e8b4dff647a424a8d0e6973469cab2, type: 3}
+  m_Script: {fileID: 11500000, guid: eb6c5fef6db5d4385b0014f511ff3156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WIP_TycoonMenu: {fileID: 942503273}
+  Click: {fileID: 0}
 --- !u!114 &1012524805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1539,9 +1558,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1012524801}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f625b2efcc394c49a1044fc0b964068, type: 3}
+  m_Script: {fileID: 11500000, guid: b6f21b196a5d045ac9210098e3c34658, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Volume: {fileID: 1012524803}
+  Tycoon: {fileID: 942503273}
+  ButtonSound: {fileID: 973868283}
 --- !u!1 &1058018583
 GameObject:
   m_ObjectHideFlags: 0
@@ -1833,8 +1855,8 @@ GameObject:
   - component: {fileID: 1603056882}
   - component: {fileID: 1603056881}
   - component: {fileID: 1603056880}
-  - component: {fileID: 1603056883}
   - component: {fileID: 1603056884}
+  - component: {fileID: 1603056883}
   m_Layer: 5
   m_Name: Play
   m_TagString: Untagged
@@ -1919,7 +1941,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1971496482}
         m_TargetAssemblyTypeName: MenuSound, Assembly-CSharp
         m_MethodName: ClickSound
         m_Mode: 1
@@ -1978,9 +2000,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1603056878}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a368cf4abcec21448d61270c26ab5b7, type: 3}
+  m_Script: {fileID: 11500000, guid: b9ca4cc6f165149e1bbead5c4078d53b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text: {fileID: 1882733146}
 --- !u!114 &1603056884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1990,9 +2013,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1603056878}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f625b2efcc394c49a1044fc0b964068, type: 3}
+  m_Script: {fileID: 11500000, guid: eb6c5fef6db5d4385b0014f511ff3156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WIP_TycoonMenu: {fileID: 0}
+  Click: {fileID: 973868283}
 --- !u!1 &1753283165
 GameObject:
   m_ObjectHideFlags: 0
@@ -2272,6 +2297,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1971496481}
+  - component: {fileID: 1971496482}
   m_Layer: 0
   m_Name: SoundManager
   m_TagString: Untagged
@@ -2294,6 +2320,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1971496482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1971496479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb6c5fef6db5d4385b0014f511ff3156, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WIP_TycoonMenu: {fileID: 0}
+  Click: {fileID: 973868283}
 --- !u!1 &1992974400
 GameObject:
   m_ObjectHideFlags: 0
