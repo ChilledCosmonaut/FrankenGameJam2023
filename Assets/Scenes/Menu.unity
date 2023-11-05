@@ -747,6 +747,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4dc36b1eb84a422b8d8f3f524ee9daf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Play: {fileID: 0}
+  Quit: {fileID: 0}
+  Credit: {fileID: 0}
 --- !u!1 &520452599
 GameObject:
   m_ObjectHideFlags: 0
@@ -906,7 +909,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a368cf4abcec21448d61270c26ab5b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 113625530}
 --- !u!1 &942503272
 GameObject:
   m_ObjectHideFlags: 0
@@ -1195,7 +1197,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a368cf4abcec21448d61270c26ab5b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 1753283167}
 --- !u!114 &960678704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1208,8 +1209,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f625b2efcc394c49a1044fc0b964068, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WIP_TycoonMenu: {fileID: 0}
-  Click: {fileID: 973868283}
 --- !u!1 &973868282
 GameObject:
   m_ObjectHideFlags: 0
@@ -1531,9 +1530,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04e8b4dff647a424a8d0e6973469cab2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Volume: {fileID: 1012524803}
-  Tycoon: {fileID: 942503273}
-  ButtonSound: {fileID: 973868283}
 --- !u!114 &1012524805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1546,8 +1542,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f625b2efcc394c49a1044fc0b964068, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WIP_TycoonMenu: {fileID: 942503273}
-  Click: {fileID: 0}
 --- !u!1 &1058018583
 GameObject:
   m_ObjectHideFlags: 0
@@ -1913,7 +1907,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 484386073}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: OnPlay
         m_Mode: 1
@@ -1987,7 +1981,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a368cf4abcec21448d61270c26ab5b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 1882733146}
 --- !u!114 &1603056884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2000,8 +1993,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f625b2efcc394c49a1044fc0b964068, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WIP_TycoonMenu: {fileID: 0}
-  Click: {fileID: 973868283}
 --- !u!1 &1753283165
 GameObject:
   m_ObjectHideFlags: 0
