@@ -1,0 +1,10 @@
+# Made in Blockbench 4.8.3
+newmtl m_fe2edda6-4d1b-d911-1390-d5f06f147e0f
+map_Kd facarde.png 
+newmtl m_01aa5d2a-55df-3a89-1f79-9b4afb1b821a
+map_Kd house.png 
+newmtl m_1f073d21-e75b-f10d-9525-5d36830f858d
+map_Kd glass.png 
+newmtl m_aa421961-b897-927b-6bfc-6f521c4cb887
+map_Kd book.png 
+newmtl none
