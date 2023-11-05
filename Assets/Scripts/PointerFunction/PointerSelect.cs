@@ -22,7 +22,19 @@ public class PointerSelect : MonoBehaviour
         {
             
 
-            if(Input.GetKeyDown(KeyCode.LeftShift))
+            if(Input.GetKeyDown(KeyCode.LeftShift)&&(player == 1))
+            {
+                // Check if the hit object has a tag
+                if (hit.collider.TryGetComponent(out Interactable Inter)) // Replace "YourTag" with the tag you want to look for
+                {
+                    // The hit object has the desired tag
+                    Inter.IneractionStart(player);
+
+                    print("kek");
+                }        
+            }
+
+            if(Input.GetKeyDown(KeyCode.Space)&&(player == 2))
             {
                 // Check if the hit object has a tag
                 if (hit.collider.TryGetComponent(out Interactable Inter)) // Replace "YourTag" with the tag you want to look for
@@ -32,9 +44,9 @@ public class PointerSelect : MonoBehaviour
 
                     print("kek");
                 }
-
-                Debug.Log(hit.point);
             }
+
+
         }
 
         

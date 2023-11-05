@@ -47,12 +47,13 @@ public class Player1 : MonoBehaviour
             StartCoroutine(MovePlayer(Vector3.right));
         }
 
-        distance = Vector3.Distance(transform.position, cursor.transform.position);
+        distance = Vector3.Distance(transform.position, wayPoint.transform.position);
 
         if(Input.GetKeyDown(KeyCode.LeftShift))
         {
             wayPoint.transform.position = cursor.transform.position;
             StartCoroutine(GoTo());
+            print("kek");
         }
 
         /////////////////////////////////////////////////////////////////////////
@@ -78,7 +79,7 @@ public class Player1 : MonoBehaviour
         float elapsedTime = 0;
 
         orgiPos = cursor.transform.position;
-        targetPos = orgiPos + direction;
+        targetPos = orgiPos + direction*7;
 
         while(elapsedTime < timeToMove)
         {
