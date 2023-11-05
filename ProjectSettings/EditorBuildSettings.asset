@@ -5,22 +5,22 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Multi-Mouse-Unity/Examples/Lightgun Example/Scenes/Lightgun00.unity
     guid: a14afa81d88c76a48b6a669eb85f3886
-  - enabled: 1
+  - enabled: 0
     path: Assets/Multi-Mouse-Unity/Examples/Lightgun Example/Scenes/Lightgun01.unity
     guid: b8b7ab39b0baa954fb322638a884e103
   - enabled: 1
-    path: Assets/Scenes/Credit.unity
-    guid: d5f835d94377349439c7e55547f1293e
+    path: Assets/Scenes/Menu.unity
+    guid: a9571af773d7246a3aca61ec804f95ab
   - enabled: 1
     path: Assets/Scenes/LevelDesign.unity
     guid: 46b75f05de1204f9199986916c179386
   - enabled: 1
-    path: Assets/Scenes/Menu.unity
-    guid: a9571af773d7246a3aca61ec804f95ab
+    path: Assets/Scenes/Credit.unity
+    guid: d5f835d94377349439c7e55547f1293e
   m_configObjects: {}
