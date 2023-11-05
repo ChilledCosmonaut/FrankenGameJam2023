@@ -8,4 +8,5 @@ public class CreditButtons : MonoBehaviour
     public void OnClick(){
         SceneManager.LoadScene("Menu");
     }
+    
 }
