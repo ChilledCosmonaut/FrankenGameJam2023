@@ -16,6 +16,8 @@ public class Player1 : MonoBehaviour
 
     public float distance;
 
+    public bool isInteracting1 = false;
+
     NavMeshAgent _navAgent;
     void Awake()
     {
@@ -27,22 +29,22 @@ public class Player1 : MonoBehaviour
     {
        
 
-        if(Input.GetKey(KeyCode.W) && !isMoving)
+        if(Input.GetKey(KeyCode.W) && !isMoving &&!isInteracting1)
         {
             StartCoroutine(MovePlayer(Vector3.forward));
         }
         
-        if(Input.GetKey(KeyCode.A)&& !isMoving)
+        if(Input.GetKey(KeyCode.A)&& !isMoving&&!isInteracting1)
         {
             StartCoroutine(MovePlayer(Vector3.left));
         }
 
-        if(Input.GetKey(KeyCode.S)&& !isMoving)
+        if(Input.GetKey(KeyCode.S)&& !isMoving&&!isInteracting1)
         {
             StartCoroutine(MovePlayer(-Vector3.forward));
         }
 
-        if(Input.GetKey(KeyCode.D)&& !isMoving)
+        if(Input.GetKey(KeyCode.D)&& !isMoving&&!isInteracting1)
         {
             StartCoroutine(MovePlayer(Vector3.right));
         }
