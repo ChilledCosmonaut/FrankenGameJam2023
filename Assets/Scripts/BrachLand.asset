@@ -10,10 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 98f8f8bf6125c5c4abe713fd5d4a4d1d, type: 3}
-  m_Name: Event
+  m_Name: BrachLand
   m_EditorClassIdentifier: 
+  timeTillSpawn:
+    min: 0.5
+    max: 1
+  location: {x: 5.99914, y: 0.458, z: 12.99961}
   header: 
   body: 
   effect:
     money: 0
     reputation: 0
+  eventMarker: {fileID: 1515260053757811381, guid: 8f7aab93d97c0304888415be233b6b7d, type: 3}

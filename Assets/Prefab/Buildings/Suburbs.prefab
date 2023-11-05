@@ -85,10 +85,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2045257923548263128, guid: 6c449b78c0e6b49d4b373f6e421accfe, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2045257923548263128, guid: 6c449b78c0e6b49d4b373f6e421accfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: -1120989108687609925, guid: 6c449b78c0e6b49d4b373f6e421accfe, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: -4002459375527073718, guid: e2a9bda22a6244440b6786c89fd5ea9d, type: 3}
+    - target: {fileID: -208595431880416365, guid: 6c449b78c0e6b49d4b373f6e421accfe, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -208595431880416365, guid: 6c449b78c0e6b49d4b373f6e421accfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 281855664364225751, guid: 6c449b78c0e6b49d4b373f6e421accfe, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 281855664364225751, guid: 6c449b78c0e6b49d4b373f6e421accfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6c449b78c0e6b49d4b373f6e421accfe, type: 3}
       propertyPath: m_Name
       value: Building_Small (2)
@@ -151,10 +175,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2045257923548263128, guid: 6c449b78c0e6b49d4b373f6e421accfe, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2045257923548263128, guid: 6c449b78c0e6b49d4b373f6e421accfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: -1120989108687609925, guid: 6c449b78c0e6b49d4b373f6e421accfe, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: -4002459375527073718, guid: e2a9bda22a6244440b6786c89fd5ea9d, type: 3}
+    - target: {fileID: -208595431880416365, guid: 6c449b78c0e6b49d4b373f6e421accfe, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -208595431880416365, guid: 6c449b78c0e6b49d4b373f6e421accfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 281855664364225751, guid: 6c449b78c0e6b49d4b373f6e421accfe, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 281855664364225751, guid: 6c449b78c0e6b49d4b373f6e421accfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6c449b78c0e6b49d4b373f6e421accfe, type: 3}
       propertyPath: m_Name
       value: Building_Small
@@ -217,10 +265,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2045257923548263128, guid: 6c449b78c0e6b49d4b373f6e421accfe, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2045257923548263128, guid: 6c449b78c0e6b49d4b373f6e421accfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: -1120989108687609925, guid: 6c449b78c0e6b49d4b373f6e421accfe, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: -4002459375527073718, guid: e2a9bda22a6244440b6786c89fd5ea9d, type: 3}
+    - target: {fileID: -208595431880416365, guid: 6c449b78c0e6b49d4b373f6e421accfe, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -208595431880416365, guid: 6c449b78c0e6b49d4b373f6e421accfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 281855664364225751, guid: 6c449b78c0e6b49d4b373f6e421accfe, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 281855664364225751, guid: 6c449b78c0e6b49d4b373f6e421accfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6c449b78c0e6b49d4b373f6e421accfe, type: 3}
       propertyPath: m_Name
       value: Building_Small (1)

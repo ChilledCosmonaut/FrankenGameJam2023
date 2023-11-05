@@ -32,11 +32,16 @@ public class Interactable : MonoBehaviour
     public float distP1, distP2;
 
     public float triggerDist;
+    
 
     // Start is called before the first frame update
     void Start()
     {
-       
+       player1 = GameObject.Find("Player1");
+       player2 = GameObject.Find("Player2");
+
+       p1Interface= player1.GetComponent<PlayerState>().PlayerUI;
+       p2Interface= player2.GetComponent<PlayerState>().PlayerUI;
     }
 
     // Update is called once per frame
@@ -77,10 +82,14 @@ public class Interactable : MonoBehaviour
     {
         player1IsInteracting = true;
 
+        PlayerState p1S = GameObject.Find("Player1").GetComponent<PlayerState>();
+        
+
         p1Interface.SetActive(true);
 
         if(Input.GetKey(KeyCode.A))
         {
+            fabricBlu.GetComponent<FabricP1>().p1Stats = p1S;
             fabricBlu.SetActive(true);
             p1Interface.SetActive(false);
             BruchLand.SetActive(false);
@@ -91,6 +100,7 @@ public class Interactable : MonoBehaviour
 
         if(Input.GetKey(KeyCode.D))
         {
+            parkBlu.GetComponent<FabricP1>().p1Stats = p1S;
             parkBlu.SetActive(true);
             p1Interface.SetActive(false);
             BruchLand.SetActive(false);
@@ -102,12 +112,15 @@ public class Interactable : MonoBehaviour
 
     public void Player2Interaction()
     {
+        PlayerState p2S = GameObject.Find("Player2").GetComponent<PlayerState>();
+
         player2IsInteracting = true;
 
         p2Interface.SetActive(true);
 
         if(Input.GetKey(KeyCode.LeftArrow))
         {
+            fabricRed.GetComponent<FabricP1>().p1Stats = p2S;
             fabricRed.SetActive(true);
             p2Interface.SetActive(false);
             BruchLand.SetActive(false);
@@ -118,6 +131,7 @@ public class Interactable : MonoBehaviour
 
         if(Input.GetKey(KeyCode.RightArrow))
         {
+            parkRed.GetComponent<FabricP1>().p1Stats = p2S;
             parkRed.SetActive(true);
             p2Interface.SetActive(false);
             BruchLand.SetActive(false);
