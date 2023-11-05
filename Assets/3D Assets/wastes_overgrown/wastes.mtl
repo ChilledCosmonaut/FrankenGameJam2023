@@ -1,0 +1,8 @@
+# Made in Blockbench 4.8.3
+newmtl m_bd225381-8bff-00ca-a297-487f083ccd99
+map_Kd dirt.png 
+newmtl m_afb863a0-4ef8-3bce-a04d-a832b1d359b8
+map_Kd fence.png 
+newmtl m_cb7e4b41-6667-99bb-4a5d-135c43714b74
+map_Kd stone.png 
+newmtl none
