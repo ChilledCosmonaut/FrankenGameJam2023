@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1515260053757811381}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.99914, y: 0.458, z: 12.99961}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -313,6 +313,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moneyPerSecond: 2
   reputationPerSecond: 0
+  cost: 0
   p1Stats: {fileID: 0}
 --- !u!4 &3440925464264964511 stripped
 Transform:
@@ -411,6 +412,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moneyPerSecond: 0
   reputationPerSecond: 2
+  cost: 0
   p1Stats: {fileID: 0}
 --- !u!4 &6459554306528324155 stripped
 Transform:
@@ -509,6 +511,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moneyPerSecond: 0
   reputationPerSecond: 2
+  cost: 0
   p1Stats: {fileID: 0}
 --- !u!4 &6400890564693330871 stripped
 Transform:
@@ -600,4 +603,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moneyPerSecond: 2
   reputationPerSecond: 0
+  cost: 0
   p1Stats: {fileID: 0}

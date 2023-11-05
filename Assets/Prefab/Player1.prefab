@@ -150,6 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 301f3c6ad4b40cd4f8340345df632d5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerUI: {fileID: 0}
   money: 0
   OnMoneyChange:
     m_PersistentCalls:

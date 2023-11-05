@@ -96,7 +96,7 @@ public class Player2 : MonoBehaviour
     {
         while(distance > 0.6)
         {
-             _navAgent.SetDestination(wayPoint.transform.position);
+             _navAgent.SetDestination(wayPoint.transform.position-new Vector3(0,2,0));
              yield return null;
         }
     }

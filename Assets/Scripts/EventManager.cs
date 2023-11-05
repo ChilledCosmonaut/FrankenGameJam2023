@@ -33,7 +33,7 @@ namespace Events
 
         private void ProcessEvent(Event eventDef)
         {
-            Instantiate(eventDef.eventMarker, eventDef.location, Quaternion.identity);
+            var eventInstance = Instantiate(eventDef.eventMarker, eventDef.location, Quaternion.identity);
         }
 
         private void OnDestroy()

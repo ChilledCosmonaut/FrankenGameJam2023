@@ -30,8 +30,16 @@ public class PointerSelect : MonoBehaviour
                     // The hit object has the desired tag
                     Inter.IneractionStart(player);
 
-                    print("kek");
-                }        
+                    
+                }
+
+                if (hit.collider.TryGetComponent(out RednerPult Redner)) // Replace "YourTag" with the tag you want to look for
+                {
+                    // The hit object has the desired tag
+                    Redner.IneractionStart(player);
+
+                   
+                }         
             }
 
             if(Input.GetKeyDown(KeyCode.Space)&&(player == 2))
@@ -41,9 +49,13 @@ public class PointerSelect : MonoBehaviour
                 {
                     // The hit object has the desired tag
                     Inter.IneractionStart(player);
-
-                    print("kek");
                 }
+
+                if (hit.collider.TryGetComponent(out RednerPult Redner)) // Replace "YourTag" with the tag you want to look for
+                {
+                    // The hit object has the desired tag
+                    Redner.IneractionStart(player);
+                }  
             }
 
 

@@ -55,7 +55,7 @@ public class Player1 : MonoBehaviour
         {
             wayPoint.transform.position = cursor.transform.position;
             StartCoroutine(GoTo());
-            print("kek");
+            
         }
 
         /////////////////////////////////////////////////////////////////////////
@@ -99,7 +99,7 @@ public class Player1 : MonoBehaviour
     {
         while(distance > 0.6)
         {
-             _navAgent.SetDestination(wayPoint.transform.position);
+             _navAgent.SetDestination(wayPoint.transform.position-new Vector3(0,2,0));
              yield return null;
         }
     }

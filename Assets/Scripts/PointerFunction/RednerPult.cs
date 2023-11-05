@@ -7,21 +7,10 @@ public class RednerPult : MonoBehaviour
    public GameObject player1;
     public GameObject player2;
 
-    public GameObject BruchLand;
-
-    public GameObject fabricBlu;
-    public GameObject parkBlu;
-
-    public GameObject fabricRed;
-    public GameObject parkRed;
-
-    public GameObject p1Interface;
-    public GameObject p2Interface;
-
     public PlayerState playerState1, playerState2;
 
-    bool player1da = false;
-    bool player2da = false;
+    public bool player1da = false;
+    public bool player2da = false;
 
     public bool player1IsInteracting = false;
     public bool player2IsInteracting = false;
@@ -50,10 +39,13 @@ public class RednerPult : MonoBehaviour
         distP1 = Vector3.Distance(transform.position, player1.transform.position);
         distP2 = Vector3.Distance(transform.position, player2.transform.position);
 
+
+        print(player1da);
         if(player1da && distP1 < triggerDist && !player2da)
         {
             //player 1 selected that plot
             Player1Interaction();
+            
         }
 
         if(player2da && distP2 < triggerDist&&!player1da )
