@@ -1,0 +1,8 @@
+# Made in Blockbench 4.8.3
+newmtl m_5b99670f-a2fc-0fce-0f8b-a2d4b8d677ff
+map_Kd greens.png 
+newmtl m_f923e1d9-bbe8-46c5-b78b-8f9cf58701eb
+map_Kd fences.png 
+newmtl m_fa9e6bb7-42c6-0e38-01cc-ac472ecdf2fe
+map_Kd paths.png 
+newmtl none
