@@ -17,8 +17,18 @@ public class Menu : MonoBehaviour
         
     }
 public void OnPlay(){
-    SceneManager.LoadScene("SampleScene");
-    Play.transform.position = new Vector2(Play.transform.position.x, Play.transform.position.y-10);
+    SceneManager.LoadScene("LevelDesign");
+  
+}
+
+public void Awake(){
+    GameObject instance = GameObject.FindWithTag("Music");
+
+        if (instance != null)
+        {
+            Destroy(instance);
+    
+        }
 }
 public void OnQuit(){
     Application.Quit();
@@ -28,6 +38,7 @@ public void OnQuit(){
 public void OnCredit(){
     SceneManager.LoadScene("Credit");
 }
+
 
    
 }
