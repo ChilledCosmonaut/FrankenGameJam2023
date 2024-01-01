@@ -6,7 +6,7 @@ public class PlayerState : MonoBehaviour
     public GameObject PlayerUI;
 
     [SerializeField]
-    private int money = 0;
+    public int money = 0;
     public UnityEvent<int> OnMoneyChange;
     public int ChangeMoney
     {
